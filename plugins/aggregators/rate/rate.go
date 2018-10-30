@@ -1,4 +1,4 @@
-package minmax
+package rate
 
 import (
 	"reflect"
@@ -49,7 +49,7 @@ var sampleConfig = `
   ## fields to rate algorithm, (curr_val - last_val) / (curr_time - last_time)
   #rate_fields = ["in_pkts","out_pkts"]
   ## fields to bit rate algorithm, (curr_val - last_val) / (curr_time - last_time) * 8
-  #bitrate_fields = ["in","out"]
+  #bit_rate_fields = ["in","out"]
 `
 
 func (m *Rate) SampleConfig() string {
